@@ -34,6 +34,7 @@ build:
     - ls -al
 
   post_ci:
+    - docker build -t=gcr.io/vidya-project/rub-img
     - docker push gcr.io/vidya-project/rub-img
 
 integrations:
